@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(../src/assets/images/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.my-container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.center {
+  text-align: center;
+}
+
+a.active {
+  color: #fff;
+  background: orange;
+}
+

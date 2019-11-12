@@ -1,0 +1,148 @@
+.my-container{
+  background-color: #efefef;
+  overflow: hidden;
+  color: #777;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  margin-top: 9%;
+  height: 60.8vh;
+  background: #fff;
+  width: 43.92vw;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.6);
+}
+
+.left-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 6vh;
+  width: 21.9vw;
+  height: 60.8vh;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 4.2vh;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 3.04vh;
+  padding: 0.6vh;
+  width: 16.1vw;
+  height: 4.87vh;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 2.28vh;
+  transition: 0.2 ease;
+}
+
+input[type="submit"] {
+  margin-bottom: 4.26vh;
+  width: 8.78vw;
+  height: 4.87vh;
+  background: orangered;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.2 ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: #ff5722;
+  transition: 0.2s ease-in-out;
+}
+
+.right-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 21.96vw;
+  height: 60.88vh;
+  background-image: url('../../assets/images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.or {
+  position: relative;
+  top: 27.39vh;
+  left: 43.14vh;
+  width: 2.69vw;
+  height: 6.08vh;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgb(0,0,0, 0.6);
+  line-height: 6.08vh;
+  text-align: center;
+  background: #FE612C;
+  color: #fff;
+  font-weight: 900;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+  font-size: 4.56vh;
+  cursor: pointer;
+}
+/*
+span {
+  font-size: 3.04vh;
+  margin-left: 5%;
+  margin-top: -10%;
+} */
+
+.right-box .signinwith {
+  display: block;
+  margin-bottom: 6.08vh;
+  font-size: 2.26vh;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0, 0.6);
+  margin-top: 12%;
+}
+
+button.social {
+  margin-bottom: 3.0vh;
+  width: 16.1vw;
+  height: 5.47vh;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: 0.2 ease;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 14%;
+}
+
+.facebook {
+  background: #32508e;
+}
+
+.twitter {
+  background: #55acce;
+}
+.google {
+  background: #dd4b39;
+}

@@ -1,0 +1,14 @@
+  <header>
+    <div class="logo">Logo</div>
+    <nav style="background-color: transparent; float: right;" [ngClass]="{active: isActive}">
+      <ul>
+        <li><a class="active" [routerLink]="['/home']" routerLinkActive="active" >Home</a></li>
+        <li><a  routerLinkActive="active" >Bucketlist</a></li>
+        <li><a>TODO List</a></li>
+        
+      </ul>
+    </nav>
+    <div class="menu-toggle" (click)="toggleMenu()"><i class="fa fa-bars"></i></div>
+  </header>
+
+
