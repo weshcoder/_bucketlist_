@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
-  public signedIn: boolean = false;
+  public signedIn = false;
 
   public isActive = false;
   toggleMenu() {
@@ -16,5 +16,11 @@ export class NavbarComponent {
     } else {
       this.isActive = true;
     }
+  }
+
+
+
+  SignOut() {
+    this.signedIn = false;
   }
 }

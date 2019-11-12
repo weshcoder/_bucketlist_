@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const featureRoutes: Routes = [
   { path: '', component: BucketlistComponent}
-]
+];
 
 @NgModule({
   imports: [

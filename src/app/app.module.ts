@@ -5,6 +5,9 @@ import { AppComponent } from './home/app.component';
 import { NavbarComponent } from './nav/nav-bar.component';
 import appRoutes from './routerConfig';
 import { LandingComponent } from './landing/landing-page.component';
+import { SharedModule } from './shared/shared.module';
+import { SignupModule } from './signup/signup.module';
+import { BucketlistModule } from './bucketlist/bucketlist.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +16,11 @@ import { LandingComponent } from './landing/landing-page.component';
     LandingComponent,
   ],
   imports: [
+    BucketlistModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]

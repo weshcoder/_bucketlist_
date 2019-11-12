@@ -5,7 +5,15 @@
         <li><a class="active" [routerLink]="['/home']" routerLinkActive="active" >Home</a></li>
         <li><a  routerLinkActive="active" >Bucketlist</a></li>
         <li><a>TODO List</a></li>
-        
+        <ng-container *ngIf="signedIn; then signoutButton; else signupButton">
+        </ng-container>
+        <ng-template #signupButton>
+          <li><a [routerLink]="['/signup']" routerLinkActive="active">Signup/Signin</a></li>
+        </ng-template>
+
+        <ng-template #signoutButton>
+          <li><a [routerLink]="['/home']" routerLinkActive="active" (click)="SignOut()">Signout</a></li>
+        </ng-template>
       </ul>
     </nav>
     <div class="menu-toggle" (click)="toggleMenu()"><i class="fa fa-bars"></i></div>
