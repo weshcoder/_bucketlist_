@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 import { SignupComponent } from './signup.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AppModule } from '../app.module';
 import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
-  { path: 'signup', component: SignupComponent}
+  { path: '', component: SignupComponent}
 ];
 
 @NgModule({
