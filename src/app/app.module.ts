@@ -7,7 +7,8 @@ import appRoutes from './routerConfig';
 import { LandingComponent } from './landing/landing-page.component';
 import { BucketlistModule } from './bucketlist/bucketlist.module';
 import { SignupComponent } from './signup/signup.component';
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './signup/shared.module';
+import { SignupModule } from './signup/signup.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SharedModule } from './shared/shared.module';
     LandingComponent,
   ],
   imports: [
+    SignupModule,
     SharedModule,
     BucketlistModule,
     BrowserModule,
