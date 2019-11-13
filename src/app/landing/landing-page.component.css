@@ -22,8 +22,9 @@ div.gallery:hover {
   margin-left: 33%;
   color: #fff;
   background-color: orange;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 10px;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -103,6 +104,13 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+.main {
+  padding: 2vw 5%;
+  position: absolute;
+  top: 25%;
+  color: white;
+  font-weight: bold;
 }
 
 

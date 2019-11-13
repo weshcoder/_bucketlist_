@@ -5,17 +5,17 @@ import { AppComponent } from './home/app.component';
 import { NavbarComponent } from './nav/nav-bar.component';
 import appRoutes from './routerConfig';
 import { LandingComponent } from './landing/landing-page.component';
-import { SharedModule } from './shared/shared.module';
-import { SignupModule } from './signup/signup.module';
 import { BucketlistModule } from './bucketlist/bucketlist.module';
+import { SignupComponent } from './signup/signup.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     LandingComponent,
   ],
   imports: [
+    SharedModule,
     BucketlistModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes)
